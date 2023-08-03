@@ -1,64 +1,29 @@
-# midterm
 
-#i
-Database memiliki nama Songs dengan 3 collectiion (sampleSongs, sampleArtist dan samplePopularSong)
-Masing- masing dari collection tersebut memiliki 10 data
+# Tokopedia.play
 
-#ii
-terdapat beberapa API yang diset untuk melakukan testing project simple spotify, diantaranya yaitu :
-- get songs/id => medapatkan data 
-- post songs => melakukan post penambahan data
-- put songs/id =>  melakukan edit data
-- delete/songs => melakukan delete data
+## Cara Menginstal
+install requirement berikut
+1. install node.js (v16)
+2. install mongoDB  (v6)
 
-#iii
-- GET/Songs/id
-URL Params
-None
-Data Params
-None
-Headers
-Content-Type: application/json
-uccess Response:
-Code:
-500 (internal server error)
-404 (song not found)
-  
--POST/Songs/id
-None
-Data Params
-None
-Headers
-Content-Type: application/json
-Success Response:
-Code:
-400 (Bad Request)
+## Cara Menggunakan
 
--PUT/Songs/id
-None
-Data Params
-None
-Headers
-Content-Type: application/json
-Success Response:
-Code:
-400 (Bad Request)
-404 (song not found)
+Panduan penggunaan proyek atau fitur-fiturnya:
 
--DELETE/Songs/id
-None
-Data Params
-None
-Headers
-Content-Type: application/json
-Success Response:
-Code:
-500 (internal server error)
+- npm install 
 
-#iV how to run
-- npm init
-- npm install express mongoose body-parser --save
-- npm install node
-- npm run start
-- test in postman
+- Configuration
+{
+    "PORT": 8080,
+    "DB_URL": "mongodb://127.0.0.1:27017/tokopedia_play_db"
+}
 
+
+- Running server (npm run start)
+
+#API Structure
+
+1. GET videothumbnail
+2. GET ListProduct
+3. Get comment and submit
+   
