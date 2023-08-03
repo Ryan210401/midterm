@@ -14,7 +14,7 @@ export const getListProduct = async (req, res) => {
 
         res.status(200).json({
             message: 'Success to fetch the product',
-            name: productList
+            data: productList
         });
     } catch (error) {
         res.status(500).json({ error: 'server error' });

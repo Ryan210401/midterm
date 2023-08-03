@@ -6,7 +6,7 @@ export const getListVideo = async (req, res) => {
         const listVideo = await getListVideo();
         res.status(200).json({
             message: 'Success fetch the video ',
-            name : listVideo
+            data : listVideo
         });
     } catch (error) {
         res.status(500).json({ error: 'server error' });

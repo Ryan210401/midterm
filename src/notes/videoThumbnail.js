@@ -1,7 +1,7 @@
 //import mongoDB
 import mongoose from "mongoose";
 
-const videoSpecification = new mongoose.Specification({
+const videoSpecification = new mongoose.Schema({
     _id: { type: Number, required: true },
     title: { type: String, required: true },
     img_url: { type: String, required: true },
